@@ -1,5 +1,6 @@
 {
-  "name": "zcss",
+  "name": "zcss.js",
+  "version": "1.0.0",
   "scripts": {
     "test": "bash tests/test"
   },
