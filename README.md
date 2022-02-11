@@ -1,6 +1,6 @@
 # zcss
 
-Minimal nested CSS preprocessor in ~30 lines
+Minimal nested CSS preprocessor in ~30 lines of JavaScript
 
 ```scss
 /* button.zcss */
