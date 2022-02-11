@@ -1,0 +1,7 @@
+{
+  "name": "zcss",
+  "scripts": {
+    "test": "bash tests/test"
+  },
+  "license": "MIT"
+}

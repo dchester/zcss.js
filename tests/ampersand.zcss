@@ -1,0 +1,28 @@
+a {
+  text-decoration: none;
+  font-size: 30px;
+
+  &.active {
+    display: block;
+  }
+
+  &:hover {
+    background: magenta;
+  }
+
+  &rticle {
+    border: 10px solid purple;
+
+    &--disabled {
+      filter: sepia(0.5);
+    }
+
+    i b:hover {
+      font-weight: bold;
+    }
+
+    p {
+      margin: 1vh;
+    }
+  }
+}

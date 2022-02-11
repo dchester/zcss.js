@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+}
+@media screen and (min-width: 900px) {
+  article {
+    padding: 1rem 3rem;
+  }
+}
+footer {
+  font-weight: 300;
+}
+

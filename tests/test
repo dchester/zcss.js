@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+export TEST=1
+
+dir=`dirname $0`
+zcss="node $dir/../zcss"
+
+files="$dir/*.zcss"
+i=1
+
+echo $i..$(echo $files | wc -w)
+
+for file in $files; do
+  output=$(diff -w \
+    <(cat $file | $zcss | tr '[:space:]' ' ') \
+    <(cat $file | scss -t expanded | tr '[:space:]' ' '))
+  if (( $? == 0 )); then
+    echo ok $i $(basename ${file/.zcss})
+    let i=i+1
+  else
+    echo not ok $i "$output"
+  fi
+done
