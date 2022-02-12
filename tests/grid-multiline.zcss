@@ -1,0 +1,22 @@
+section {
+  background: cyan;
+}
+
+@media screen and (min-width: 990px) {
+  .card {
+    width: 128px;
+    height: 64px;
+  }
+  section[data-level="1"] {
+    grid-template-areas:
+      "a a"
+      "b b"
+      "left right";
+  }
+  section h1 {
+    padding: 32px;
+    & + p {
+      padding: 24px;
+    }
+  }
+}

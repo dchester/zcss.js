@@ -4,7 +4,7 @@ function zcss(src) {
   for (const line of src.split('\n')) {
     if (line.match(/^\s*@[msdk].*\{/)) {
       opened && lines.push('}');
-      opened = false;
+      opened = open = close = false;
       lines.push(line)
     } else if (line.match(/\{\s*$/)) {
       open = true
