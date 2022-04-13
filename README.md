@@ -64,7 +64,7 @@ section {
   }
 }
 
-/* secion:hover {
+/* section:hover {
  *  color: purple;
  * }
  */
