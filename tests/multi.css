@@ -1,0 +1,10 @@
+:is(.a, .z) :is(.b, .c) {
+  display: flex;
+  box-shadow: 0 0 2px red, 0 0 0 3px blue;
+}
+
+:is(.l, .m) :is(.n, .o) {
+  display: block;
+  box-shadow: 0 0 2px red, 0 0 0 3px blue;
+}
+

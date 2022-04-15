@@ -1,7 +1,9 @@
 function zcss(src) {
   const lines = [], stack = []
   let open, opened, close
-  for (const line of src.split('\n')) {
+  src = src.replace(/,\n/gs, ',')
+  for (let line of src.split(/\n/)) {
+    line = line.replace(/(.+,.+){/, ":is($1){")
     if (line.match(/^\s*@[msdk].*\{/)) {
       opened && lines.push('}')
       opened = open = close = false

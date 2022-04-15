@@ -1,0 +1,16 @@
+.a, .z {
+  .b, .c {
+    display: flex;
+    box-shadow: 0 0 2px red, 0 0 0 3px blue;
+  }
+}
+
+.l,
+.m {
+  .n,
+  .o {
+    display: block;
+    box-shadow:
+      0 0 2px red, 0 0 0 3px blue;
+  }
+}
